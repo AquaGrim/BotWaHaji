@@ -1,0 +1,5 @@
+node_modules/
+sentWelcome.json
+.wwebjs_cache/
+.wwebjs_auth/
+*.log
