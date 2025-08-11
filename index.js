@@ -38,9 +38,7 @@ let sentWelcome = fs.existsSync(welcomeFile)
   ? JSON.parse(fs.readFileSync(welcomeFile))
   : [];
 
-const client = new Client({
-  authStrategy: new LocalAuth(),
-});
+
 
 client.on("qr", (qr) => {
   qrcode.generate(qr, { small: true });
